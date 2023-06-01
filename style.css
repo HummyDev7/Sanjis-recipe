@@ -1,0 +1,36 @@
+* {
+
+  box-sizing: border-box;
+}
+
+img.bg-image{
+
+  background-image: url(/images/backgroundImage.jpg);
+  background-repeat: no-repeat; /*we need this property to disabled the repition of the image*/
+  background-size: cover;
+
+  position: absolute; /*This property allow the img to combine with other properties*/
+  left: 0px;
+  top: 0px;
+  z-index: -1; /*this property define what order will be the top of an element*/
+  width: 100%;
+  height: 110%;
+  /*this property is responsible for making the background image blur*/
+  -webkit-filter: blur(5px); 
+  filter: blur(5px) brightness(0.7);
+}
+
+body .container {
+  
+  background-color: #c39759;
+  padding: 10px;
+  margin: 50px;
+}
+
+div .header-name {
+  
+  position: relative;
+  color: whitesmoke;
+  bottom: 20px;
+  text-align: center;
+}
