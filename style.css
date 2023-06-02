@@ -1,36 +1,126 @@
 * {
-
   box-sizing: border-box;
 }
 
-img.bg-image{
-
-  background-image: url(/images/backgroundImage.jpg);
-  background-repeat: no-repeat; /*we need this property to disabled the repition of the image*/
-  background-size: cover;
-
-  position: absolute; /*This property allow the img to combine with other properties*/
-  left: 0px;
-  top: 0px;
-  z-index: -1; /*this property define what order will be the top of an element*/
-  width: 100%;
-  height: 110%;
-  /*this property is responsible for making the background image blur*/
-  -webkit-filter: blur(5px); 
-  filter: blur(5px) brightness(0.7);
+body {
+  background-color: #0b0e1f;
 }
 
-body .container {
-  
-  background-color: #c39759;
-  padding: 10px;
+.main-container {
+  background-color: #EDEDE3;
+  height: 500px;
+  width: 1000px;
+  /*This two property the margin-left and margin-right that have an auto value allow us to center our div*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  border-radius: 50px;
+  box-shadow: 10px 10px #c7434e; /*this property allow us to add a shadow around our box*/
+}
+
+/*this is the image of sanji in the main page*/
+.main-container .img-container .sanji-image {
+  width: 300px;
+  height: 400px;
   margin: 50px;
+  border-radius: 20px;
+  filter: drop-shadow(7px 7px 5px #0b0e1f);
 }
 
-div .header-name {
-  
-  position: relative;
-  color: whitesmoke;
-  bottom: 20px;
+.main-container .main-header {
+  color: #0b0e1f;
+  position: absolute;
+  left: 730px; 
+  margin-top: 40px;
+}
+
+.main-container .recipe-img .image {
+  width: 150px;
+  height: 150px;
+  border-radius: 30%;
+  filter: drop-shadow(5px 5px 5px black);
+}
+
+.main-container .recipe-img .column .image.one,
+.image.two,
+.image.three {
+  position: relative; /*always rememeber that the relative property allow us to position the element in to its normal position*/
+  padding: 20px;
+  float: right;
+  right: 90px;
+  bottom: 400px;
+}
+
+.main-container .recipe-img .column .image.four,
+.image.five,
+.image.six {
+  position: relative; /*always rememeber that the relative property allow us to position the element in to its normal position*/
+  padding: 20px;
+  float: right;
+  left: 360px;
+  bottom: 200px;
+}
+
+.main-container .recipe-img img {
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.main-container .recipe-img img:hover  {
+  -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+
+.main-container .recipe-img .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  float: right;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.main-container .recipe-img .middle.one {
+  right: 170px;
+  bottom: 255px;
+}
+
+.main-container .recipe-img .middle.two {
+  right: 270px;
+  bottom: 255px;
+}
+
+.main-container .recipe-img .middle.three {
+  right: 400px;
+  bottom: 255px;
+}
+
+.main-container .recipe-img .middle.four {
+  right: 152px;
+  bottom: 57px;
+}
+
+.main-container .recipe-img .middle.five {
+  right: 315px;
+  bottom: 57px;
+}
+
+.main-container .recipe-img .middle.six {
+  right: 455px;
+  bottom: 57px;
+}
+
+
+.main-container .recipe-img .column:hover .middle {
+  opacity: 1 ;
+}
+
+.main-container .recipe-img .text {
+  color: #0b0e1f;
+  font-size: 18px;
+  padding: 16px 32px;
 }
