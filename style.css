@@ -32,6 +32,7 @@ body {
   position: absolute;
   left: 730px; 
   margin-top: 40px;
+  font-family:Helvetica;
 }
 
 .main-container .recipe-img .image {
@@ -105,7 +106,7 @@ body {
 }
 
 .main-container .recipe-img .middle.five {
-  right: 315px;
+  right: 330px;
   bottom: 57px;
 }
 
@@ -121,6 +122,7 @@ body {
 
 .main-container .recipe-img .text {
   color: #0b0e1f;
-  font-size: 18px;
+  font-size: 15px;
   padding: 16px 32px;
+  font-family: Verdana;
 }

@@ -1,0 +1,125 @@
+body {
+  box-sizing: border-box;
+  background-color: #0b0e1f;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.container .container-ing {
+  background-color: #EDEDE3;
+  width: 350px;
+  height: 600px;
+  border-radius: 40px;
+  margin-top: 30px;
+  margin-left: 40px;
+  box-shadow: 5px 5px #C7434E;
+}
+
+.container .container-ing .recipe {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  position: relative;
+  filter: drop-shadow(3px 3px 3px #EDEDE3);
+}
+
+/*This reponsible for position of the image of recipe one*/
+.container .container-ing .recipe.one {
+  left: 270px;
+  bottom: 200px;
+}
+
+.container .container-ing .recipe.two {
+  left: 270px;
+  bottom: 280px;
+}
+
+.container .container-ing .recipe.three {
+  left: 270px;
+  bottom: 240px;
+}
+
+.container .container-ing .recipe.four {
+  left: 270px;
+  bottom: 200px;
+}
+
+.container .container-ing .recipe.six {
+  left: 270px;
+  bottom: 220px;
+}
+
+.container .container-ing .recipe.five {
+  left: 270px;
+  bottom: 296px;
+}
+
+.container .container-ing .recipe { 
+  transition: transform .4s; /* Animation */
+}
+
+.container .container-ing img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 11px #C7434E; 
+}
+
+.container .container-ing .ingredient-text {
+  color: #C7434E;
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  top: 220px;
+  left: 35px;
+  font-family:sans-serif;
+}
+
+.container .container-ing .recipe-one-ing {
+  position: relative;
+  color: #0b0e1f;
+  top: 220px;
+  left: 12px;
+  font-size: 18px;
+  font-family: Georgia;
+}
+ 
+.container .container-ing .recipe-description {
+  color: #0b0e1f;
+  max-width: 250px;
+  left: 87px;
+  top: 40px;
+  font-size: 18px;
+  position: absolute;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.container .container-other .recipe-title {
+  color: #EDEDE3;
+  font-size: 50px;
+  position: absolute;
+  top: 50px;
+  left: 600px;
+  font-family: Helvetica;
+}
+
+.container .container-other .instruction-text {
+  color: #C7434E;
+  font-size: 25px;
+  position: absolute;
+  left: 600px;
+  top: 200px;
+  font-family:sans-serif;
+}
+
+.container .container-other .steps-instruction {
+  position: absolute;
+  color: #EDEDE3;
+  max-width: 700px; /*This property limit the width of the text*/
+  left: 580px;
+  top: 280px;
+  font-size: 20px ;
+  word-spacing: 3px;
+  line-height: 1.5em;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
